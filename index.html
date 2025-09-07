@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <style>
+        body,html{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            height: 100%;
+            color: white;
+        }
+        .container{
+            display: flex;
+            justify-content: centre;
+            align-items: center;
+            height: 100%;
+            background-color: black;
+        }
+        .box{
+        background-color: #333;
+        text-align: centre;
+        padding: 100px 100px;   
+        border-radius: 20px;
+        border: 5px solid gold;
+        }
+        .box-hover{
+            background-color: #555;
+            transform: scale(1.05);
+        }
+        #profile{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 2px solid gold;
+        }
+        #POQ,#QOP{
+             background-color: gold;
+             height: 50px;
+             width: 150px;
+             border-radius: 20px;
+             cursor: pointer;
+        }
+        #POQ:hover,#QOP:hover{
+            background-color: gold;
+            transform: scale(1.05);
+        }
+        .h2{
+            color: white;
+            font-size: 200px;
+        }
+        #X,#LinkedIn,#GitHub,#Instagram{
+            border-radius: 50%;
+            border: 2px solid gold;
+            cursor: pointer;
+        }
+        #X:hover,#LinkedIn:hover,#GitHub:hover,#Instagram:hover{
+            transform: scale(1.1);
+            border-color: gold;
+            background-color: white;
+        }
+        .logo{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h2>Krishna Tiwari</h2>
+        <img src="images/Pfp.png" alt="Profile Picture" height="200px" width="200px" id="profile">
+        <button id="POQ">View Projects</button>
+        <button id="QOP">View Portfolio</button>
+        <div class="img" id="logo">
+            <img src="images/LinkedIn.webp" alt="LinkedIn img" id="LinkedIn" height="100px" width="100px">
+            <img src="images/X.png" alt="X img" id="X" height="100px" width="100px">
+            <img src="images/GitHub.png" alt="Gitahub img" id="GitHub" height="100px" width="100px">
+            <img src="images/instagram-logo.webp" alt="Instagram img" id="Instagram" height="100px" width="100px">
+        </div>     
+     </div>
+    </div>
+  </body>
+</html>
